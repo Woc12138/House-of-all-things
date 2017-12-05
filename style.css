@@ -1,0 +1,112 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+
+
+body{
+
+    display: flex;
+    justify-content:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+}
+
+h2{
+    width: 125px;
+    height: 30px;
+    margin: 0;
+    position: relative;
+    top: 325px;
+    left: -58px;
+    color: BlueViolet;
+
+}
+
+.box{
+    display: flex;
+    text-align: center;
+    width: 60%;
+    height: 35%;
+    background-color: CornflowerBlue;
+    position: absolute;
+    top: 370px;
+    align-items: flex-start;
+    border-radius: 11px;
+    opacity: 1;
+
+}
+
+form{
+    width: 80%;
+    height: 41%;
+    position: relative;
+    top: 45px;
+    left: 25px;
+}
+
+.bgimg{
+    /*position:fixed;*/
+    /*z-index:-1;*/
+    width: 100%;
+    height: 100%;
+}
+
+img{
+    position:fixed;
+    z-index:-1;
+    width: 100%;
+    height: 100%;
+}
+
+.input{
+    border: solid 1px CornflowerBlue;
+    background-color: CornflowerBlue;
+
+}
+
+.input:hover{
+    border-color: white;
+}
+
+.submit{
+    width: 185px;
+    height: 39px;
+    background-color: CornflowerBlue ;
+    border: solid 1px white;
+    position: relative;
+    top: 15px;
+    color: white;
+
+}
+
+
+.iconfont.icon-yonghu{
+    height: 16px;
+    width: 18px;
+    color: white;
+    position: relative;
+    left: -4px;
+    top: 0px;
+}
+
+.iconfont.icon-yonghu:hover{
+    color: #44ceff;
+}
+
+.iconfont.icon-mima{
+    height: 16px;
+    width: 18px;
+    color: white;
+    position: relative;
+    left: -4px;
+    top: 0px;
+}
+
+.iconfont.icon-yonghu:hover{
+    color: #44ceff;
+}
+
