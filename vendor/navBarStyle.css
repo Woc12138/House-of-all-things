@@ -1,0 +1,123 @@
+html{
+    width:auto;
+    height: 7.421%;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+}
+
+.nav-bar{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.market{
+    width: 33.33%;
+    height: 100%;
+    background-color: white;
+    text-align: center;
+
+}
+/*p :active{color: rgb(126,206,244)}*/
+/*.iconfont.icon-shouye:active{color: rgb(126,206,244)}*/
+/*.icon-market {*/
+    /*width: 11%;*/
+    /*height: 6%;*/
+    /*background-color: white;*/
+    /*display: flex;*/
+    /*flex-direction: column-reverse;*/
+    /*position: absolute;*/
+    /*top: 1%;*/
+    /*left: 13%;*/
+    /*text-align: center;*/
+/*}*/
+
+.market p{
+    font-size: 1.25em;
+    position: absolute;
+    color: rgb(117,117,117);
+    top: 70%;
+    left: 15.5%;
+    margin: 0;
+    font-family: PingFangSC-Medium;
+}
+.iconfont.icon-shouye{
+    color: rgb(117,117,117);
+    font-size: 5em;
+    position: absolute;
+    /*top: 0.7496%;*/
+    top: 0%;
+    left: 13%;
+}
+
+/*.market{*/
+    /*color: rgb(126,206,244);*/
+/*}*/
+
+.plus-sign{
+    width: 31.33%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    left: 32%;
+}
+
+.iconfont.icon-jia{
+    font-size: 4.5em;
+    position: absolute;
+    top: 10%;
+    left: 46.3%;
+    z-index: 8;
+    color: white;
+
+
+}
+
+.iconfont.icon-circle{
+    font-size: 5.8em;
+    position: absolute;
+    top: 0;
+    left: 44.8%;
+    color: #f19ec2;
+
+
+}
+
+.mine{
+    width: 33.33%;
+    height: 100%;
+    background-color: white;
+}
+
+.iconfont.icon-user{
+    color: rgb(117,117,117);
+    font-size: 4.5em;
+    position: absolute;
+    top: 0%;
+    right: 13.8%;
+}
+
+.mine p{
+    font-size: 1.25em;
+    position: absolute;
+    color: rgb(117,117,117);
+    top: 70%;
+    right: 15.5%;
+    margin: 0;
+    font-family: PingFangSC-Medium;
+}
+
+
+
+
+
+
+
+

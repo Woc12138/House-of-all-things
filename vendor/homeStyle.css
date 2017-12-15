@@ -1,0 +1,249 @@
+/*高1334 宽750*/
+
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.cover-area{
+    background-color: rgb(126,206,244);
+    width: 100%;
+    height: 2.79%;
+}
+
+.search-group{
+    display: flex;
+    align-items: center;
+    background-color: rgb(126,206,244);
+    width: 100%;
+    height: 6.14%;
+    position: relative;
+    z-index: 2;
+    box-shadow: 11px -7px 3px 10px rgb(126,206,244);
+}
+
+.search-group button{
+    width: 5%;
+    height: 44%;
+    background-color: white;
+    border: 0;
+    position: relative;
+    right: -3%;
+}
+
+    /*-webkit-filter: blur(0px);*/
+
+
+
+select{
+    width: 67px;
+    position: relative;
+    left: 3.2%;
+    z-index: 2;
+    background-color: rgb(126,206,244);
+    /*border: 0;*/
+    color: white;
+    font-size: 2em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+
+.iconfont.icon-down{
+    position: relative;
+    z-index: 8;
+    width: 28px;
+    height: 14px;
+    color: white;
+    top: -10%;
+    left: 4%;
+    font-size: 2em;
+}
+
+.search-input{
+    background-color: white;
+    width: 74.13%;
+    height: 54.54%;
+    border-radius: 22px;
+    border: 0;
+    position: relative;
+    right: -9%;
+    padding-left: 10px;
+    font-size: 1.625em;
+}
+
+.iconfont.icon-fangdajing{
+    color: rgb(117,117,117);
+    /*height: 31.81%;*/
+    /*width: 3.73%;*/
+    font-size: 2em;
+    position: relative;
+    right: -3%;
+    top: 0%;
+    z-index: 8;
+}
+
+/*.search-group button{*/
+    /*position: absolute;*/
+    /*right: -5%;*/
+/*}*/
+
+.iconfont.icon-fangdajing:hover{
+    color: rgb(126,206,244);
+}
+
+body .big-picture{
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.delegate{
+    background-color: red;
+    width: 100%;
+    height: 17.991%;
+    position: relative;
+    top: -4px;
+    z-index: 0;
+}
+
+.show-picture{
+    position: relative;
+    top: 8.33%;
+    left: 5.33%;
+    width: 23.2%;
+    height: 79.17%;
+    background-color: white;
+    margin: 0;
+
+}
+
+.delegate p{
+    font-size: 2em;
+    color: rgb(51,51,51);
+    font-family: PingFangSC-Medium;
+    position: absolute;
+    top: 8.33%;
+    left: 31.2%;
+    z-index: 5;
+    width: 32%;
+    height: 20%;
+    margin: 0;
+}
+
+/*.price-symbol{*/
+    /*color: rgb(126,206,244);*/
+    /*font-size: 1.87em;*/
+    /*position: absolute;*/
+    /*top: 8.33%;*/
+    /*left: 86.26%;*/
+/*}*/
+.dlgt-detail p{
+    width: 52%;
+    height: 40%;
+    background-color: white;
+    font-family: PingFangSC-Medium;
+    font-size: 1.375em;
+    color: rgb(153,153,153);
+    position: absolute;
+    left: 32.66%;
+    top: 30%;
+
+}
+
+/*img.heart-shaped{*/
+    /*width: 4%;*/
+    /*height: 13%;*/
+    /*position: absolute;*/
+    /*top: 74.33%;*/
+    /*left: 32.5%;*/
+    /*z-index: 2;*/
+/*}*/
+
+.deadline{
+    font-size: 1.5em;
+    position: absolute;
+    top: 77%;
+    left: 71%;
+    width: 26%;
+    height: 13%;
+}
+
+.click-jia{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    color: rgb(117,117,117);
+    font-size: 2em;
+    border: 0;
+    border-radius: 15px;
+    box-shadow:1px 3px 1px 1px rgb(210,210,210);
+
+    text-align: center;
+}
+
+hr{
+    color: #dfdfdd;
+
+}
+
+.click-jia p a:active{
+    color: rgb(126,206,244);
+}
+
+.click-jia p a:visited {color: rgb(117,117,117)}
+
+.click-jia p a{
+    text-decoration: none;
+}
+
+.click-jia p a:link {color: rgb(117,117,117)}
+
+#triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid grey;
+    position: absolute;
+    bottom: -11.7%;
+    left: 48%;
+    text-shadow: 10px 30px 10px 10px rgb(210,210,210);
+}
+
+#hidden-show{
+    display: none;
+    width: 35%;
+    height: 16.5%;
+    position: absolute;
+    bottom: 3%;
+    left: 33%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

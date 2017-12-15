@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="inputSdDlgtStyle.css" />
+
+</head>
+<body>
+    <!--<div class="prompting">-->
+        <!--<p class="promp-word">确定发布？</p>-->
+        <!--<button class="left-button">取消</button><button>确定</button>-->
+    <!--</div>-->
+    <div class="cover-area"></div>
+    <div class="box"><img src="返回.png"><p class="head">发布委托</p></div>
+    <div class="uoload-pic"><img src="photoicon.png" class="photoicon"></div>
+    <p class="p-name">委托名</p><br/>
+    <input type="text" maxlength="10" class="content-head"><br/>
+    <p class="p-detail">委托详情</p><br/>
+    <!--<input type="text" maxlength="100" class="detales"><br/>-->
+    <textarea class="text"></textarea>
+    <span><p class="p-reward">报酬</p><input type="text" maxlength="20" class="reward"></span><br/>
+    <span><p class="p-date">截止日期</p><input type="text" maxlength="15" class="deadline"></span><br/>
+    <span><p class="p-cont">联系方式</p><input type="text" maxlength="35" class="contact"></span><br/>
+    <button class="button" id="publish">发布</button>
+
+
+<script>
+
+    $("#publish").click(function(){
+        if($.trim($("content-head").val()).length<=0||$.trim($("text").val()).length<=0||$.trim($("reward").
+            val()).length<=0||$.trim($("deadline").val()).length<=0||$.trim($("contact").val()).length<=0)
+        alert("不可为空");
+        else{
+            $.post("哒哒哒",{
+                name: $(".content-head").val(),
+                detail: $(".text").val(),
+                reward: $(".reward").val(),
+                date: $(".deadline").val(),
+                contact: $(".contact").val()
+            },function(){
+                alert("发布委托成功")
+            })
+        }
+
+
+    })
+
+//
+//
+//    $("#publish").click(function(){
+////        alert("OK")
+//        $.post("啦啦啦",{
+//            name: $(".content-head").val(),
+//            detail: $(".text").val,
+//            reward: $(".reward").val,
+//            date: $(".deadline").val,
+//            contact: $(".contact").val
+//        },function(data,status) {
+//            alert(data+"666"+status)
+//
+//        })
+//
+//    })
+
+</script>
+
+
+
+
+</body>
+</html>
+
+
