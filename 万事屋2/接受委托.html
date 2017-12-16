@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <title>万事万物皆有所托</title>
+    <link rel="shortcut icon" href="bitbug_favicon .ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="receiveDelegateStyle.css" />
+</head>
+<body>
+<a href="万事屋.html"><img src="返回.png" class="back"></a>
+<img class="head-picture">
+<div class="content">
+    <p class="content-head">寝室路由器</p>
+    <img src="接受委托粉标签.png" class="send-dlgt-pink">
+    <p class="dlgt-detale">委托详情：</p><br/><div class="detail"><p></p></div>
+    <p class="dlgt-reward">报酬：</p><p class="reward"></p>
+    <p class="dlgt-deadline">截止时间：</p><p class="deadline"></p>
+    <p class="dlgt-contact">联系方式：</p><p class="contact"></p>
+
+</div>
+    <button class="button">发送委托</button>
+
+<script>
+    $(document).ready(function(){
+        $.get("呵呵呵",function(data){
+             $(".content-head").append(data.name),
+             $(".detail").$("p").append(data.detail),
+             $(".reward").append(data.reward),
+             $(".deadline").append(data.date)
+    });
+
+});
+    $(".button").click(function(){
+
+         $.ajax({
+
+             type: "POST",
+             url: "http://101.132.140.85",
+             dataType: "json",
+             data: JSON.stringify({
+
+                 "name": $(".content-head").val(),
+                 "detail": $(".detail").find("p").val(),
+                 "reward": $(".reward").val(),
+                 "date": $(".deadline").val(),
+                 "contact": $(".contact").val(),
+                 "user_id": localStorage.getItem('name')
+                 }),
+                 beforeSend: function (xhr) {
+                     xhr.setRequestHeader("Content-Type", "application/json");
+                 },
+                 success: function () {
+                     alert("发布委托成功")
+                     var button = $(".button")
+                     button.css("background-color","#f19ec2")
+                     button.html("放弃委托")
+
+                }
+            });
+        })
+
+
+</script>
+</body>
+</html>

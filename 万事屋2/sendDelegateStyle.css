@@ -1,0 +1,140 @@
+
+html{
+    width: 100%;
+    height: 100%;
+    /*min-height: 667px;*/
+    /*min-width: 375px;*/
+}
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+}
+
+.back{
+    position: absolute;
+    top: 5%;
+    left: 4%;
+
+}
+
+
+.head-picture{
+    width: 100%;
+    height: 30.36%;
+    background-color: gray;
+    position: fixed;
+    left: 0%;
+    z-index: -2;
+
+}
+
+.content{
+    width: 100%;
+    height: 32.82%;
+    background-color: white;
+    text-align: center;
+    position: relative;
+    top: 33%;
+}
+
+p.content-head{
+    font-size: 2.125em;
+    margin: 0;
+    position: relative;
+    top: 2%;
+    left: 32%;
+    width: 35%;
+
+}
+.send-dlgt-pink{
+    position: absolute;
+    top: -1.5%;
+    left: 4%;
+}
+
+
+p{
+    font-size: 1.625em;
+    color: gray;
+    font-family: PingFangSC-Medium;
+    width: 100%;
+
+}
+
+.dlgt-detale {
+    position: relative;
+    top: 4%;
+    left: -36%;
+}
+
+.detale{
+    width: 80%;
+    height: 40%;
+    background-color: white;
+    position: relative;
+    left: 6%;
+    top: -11%;
+
+}
+
+.dlgt-detale{
+    position: relative;
+    top: 4%;
+    left: -36%;
+}
+
+.dlgt-reward{
+    position: relative;
+    top: -10%;
+    left: -39%;
+}
+
+.dlgt-deadline{
+    position: relative;
+    top: -12%;
+    left: -35.6%;
+}
+
+.dlgt-contact{
+    position: relative;
+    top: 4%;
+    left: -36%;
+}
+button{
+    width:78.66%;
+    height: 6.596%;
+    position: absolute;
+    bottom: 5.922%;
+    border: 0;
+    background-color: rgb(126,206,244);
+    left: 10.66%;
+    color: white;
+    font-family: PingFang-SC-Medium;
+    font-size: 2em;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
