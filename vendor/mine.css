@@ -79,7 +79,14 @@ body{
     top: 32%;
     left: 11.2%;
     width: 19%;
+    color: black;
 }
+
+.word:link{color:black}
+.word:visited{color:black}
+
+
+
 
 .suggestion{
     font-size: 2.0625em;
@@ -93,7 +100,14 @@ body{
 }
 
 
+.xiangyou{
+    width: 3%;
+    height: 29%;
+    position: absolute;
+    right: 5%;
+    top: 35%;
 
+}
 
 
 

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="jquery-3.2.1.min%20.js"></script>
 
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="inputSdDlgtStyle.css" />
@@ -30,9 +30,8 @@
 <script>
 
     $("#publish").click(function(){
-        if($.trim($("content-head").val()).length<=0||$.trim($("text").val()).length<=0||$.trim($("reward").
-            val()).length<=0||$.trim($("deadline").val()).length<=0||$.trim($("contact").val()).length<=0)
-        alert("不可为空");
+        if($.trim($(".content-head").val())===''||$.trim($(".text").val())===''||$.trim($(".reward").val()).length<=0||$.trim($(".deadline").val()).length<=0||$.trim($(".contact").val()).length<=0)
+        {alert("不可为空");}
         else{
             $.post("哒哒哒",{
                 name: $(".content-head").val(),
@@ -42,11 +41,11 @@
                 contact: $(".contact").val()
             },function(){
                 alert("发布委托成功")
+                window.location="/万事屋.html"
             })
         }
-
-
     })
+
 
 //
 //

@@ -80,7 +80,7 @@ select{
     font-size: 1.625em;
 }
 
-.iconfont.icon-fangdajing{
+.fangdajing{
     color: rgb(117,117,117);
     /*height: 31.81%;*/
     /*width: 3.73%;*/
@@ -96,7 +96,7 @@ select{
     /*right: -5%;*/
 /*}*/
 
-.iconfont.icon-fangdajing:hover{
+.fangdajing:hover{
     color: rgb(126,206,244);
 }
 
@@ -137,6 +137,7 @@ body .big-picture{
     width: 32%;
     height: 20%;
     margin: 0;
+    border-bottom: 0.5px solid #999999;
 }
 
 /*.price-symbol{*/
@@ -232,6 +233,11 @@ hr{
 }
 
 
+.index{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
 
 
 

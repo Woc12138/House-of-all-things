@@ -91,6 +91,7 @@ textarea{
     bottom: 38%;
     left: 5.33%;
     font-size: 1.75em;
+    color: rgb(153,153,153);
 
 }
 
@@ -110,6 +111,13 @@ textarea{
     position: absolute;
     bottom: 23.913%;
     right: 5.33%;
+}
+
+p .dead-hour{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+
 }
 
 .contact{

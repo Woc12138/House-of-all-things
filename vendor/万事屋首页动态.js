@@ -3,65 +3,6 @@
  */
 
 //
-//
-// // function submitForm() {
-//     document.body.setAttribute("style", "overflow-y: hidden; min-height: 0;")
-//     var xhr
-//     if (window.XMLHttpRequest) {
-//         xhr = new XMLHttpRequest();  // IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
-//     } else {
-//         xhr = new ActiveXObject("Microsoft.XMLHTTP");
-//
-// }
-
-
-// //封装ajax
-// function ajax(){
-//
-// }
-//
-//
-// //调用ajax
-// addEvent(document,'click',function(){
-//
-// })
-// $(document).ready(function(){
-//     $(selector).click(function(){
-//         window.alert("sdw")
-//
-// })
-//
-//
-//
-// })
-window.onload=function() {
-    var searchClick = document.getElementById('search-click');
-    searchClick.onclick = function () {
-        $.post("demo_test.asp",
-            {
-                content: $("#search-input").val()
-            },
-            function (data, status) {
-                alert("数据：" + data + "\n状态：" + status);
-
-            });
-    }
-}
-// $.get(url)
-//         function (data,status) {
-//           .data.content
-//
-//         }
-//     };
-// }
-// $(document).ready(function(){
-//   $("button").click(function(){
-//     $.get("https://api.github.com/user/emails",function(data,status){
-//       alert("数据：" + data + "\n状态：" + status);
-//     });
-//   });
-// });
-//
 // //
 // window.onload=function() {
 //     var jiaClick = document.getElementById('plus-sign');
@@ -72,13 +13,6 @@ window.onload=function() {
 //     }
 //
 // }
-//
-// $.get(url)
-//         function (data,status) {
-//           .data.content
-//
-//         }
-//     };
 // }
 //
 // $(document).ready(function(){
@@ -145,38 +79,76 @@ window.onload=function() {
 //    }
 //
 //}
+// window.onload=function(){
+// var box = window.top.document.getElementById("homeframe").contentWindow.document.getElementById("hidden-show");
+//     function divSW() {
+//     if( box.style.display === "none") {
+//        box.style.display = "block";
+//
+//     } else {
+//         box.style.display = "none";
+//     }
+// }
+// }
 
-var box = window.top.document.getElementById("homeframe").contentWindow.document.getElementById("hidden-show");
 
-function divSW() {
-    if( box.style.display === "none") {
-       box.style.display = "block";
+/* 得到委托数据倒叙排列在页面中 */
 
-    } else {
-        box.style.display = "none";
+window.onload=function() {
+    $.get('嘀嘀嘀',
+    function(text){
+        var json = JSON.parse(text);
+        var html="";
+        for(var i = 0;i<json.length;i++){
+            if(json[i].type = 0)
+                var word = "【发布委托】";
+            else if(json[i].type = 1)
+                word = "【接受委托】";
+
+            html += "<div class='delegate'><p>" + word + "</p></div><div class='dlgt-detail'><p>" + json[i].detail +
+            "</p></div><div class='deadline'>" + "截止：" + "<span>" + json[i].post_date + "</span></div>";
+        }
+        $('.index').html(html);
+
+        async:true
+    })
+
+
+
+
+/* 将用户搜索的内容post给服务器并返回搜索到的数据  */
+
+
+
+window.onload=function() {
+    var searchClick = document.getElementById('search-click');
+
+    searchClick.onclick = function () {
+
+        $.post("嗯嗯嗯",
+            {
+                "search": $("#search-input").val
+            },
+            function (data) {
+                var json = JSON.parse(data);
+                var html = "";
+                for (var n = 0; n < json.length; n++) {
+                    if (json[n].type = 0)
+                        var word = "【发布委托】";
+                    else if (json[n].type = 1)
+                        word = "【接受委托】";
+
+                    html += "<div class='delegate'><p>" + word + "</p></div><div class='dlgt-detail'><p>" + json[n].detail +
+                        "</p></div><div class='deadline'>" + "截止：" + "<span>" + json[n].post_date + "</span></div>";
+                }
+                $('.index').html(html);
+                async:true
+            })
 
     }
+
 }
-
-
-
-$(document).ready(function(){
-    .$get("啊啊啊",function(data,status) {
-            var i;
-            for(i=0,i<=data.length,i++){
-
-
-            }
-    }
-    )
 }
-
-
-
-
-
-
-
 
 
 

@@ -2,19 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="jquery-3.2.1.min%20.js"></script>
     <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,-->
      <!--user-scalable=no" />-->
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="receiveDelegateStyle.css" />
 </head>
 <body>
+<img src="返回.png" class="back">
 <img class="head-picture">
 <div class="content">
     <p class="content-head">寝室路由器</p>
     <img src="接受委托粉标签.png" class="send-dlgt-pink">
-    <p class="dlgt-detales">委托详情：</p><br/><div class="detail"><p>撒的瓦斯单位大三撒的瓦斯单位大三哇是我的撒打我的撒的瓦斯单位大三哇是我的撒打我的撒的瓦斯单位大三哇是我的撒打我的撒的瓦斯单位大三哇是我的撒打我的撒的瓦斯单位大三哇是我的撒打我的撒的瓦斯单位大三啊是我的</p></div>
-
+    <p class="dlgt-detale">委托详情：</p><br/><div class="detail"><p></p></div>
     <p class="dlgt-reward">报酬：</p><p class="reward"></p>
     <p class="dlgt-deadline">截止时间：</p><p class="deadline"></p>
 
@@ -23,7 +23,7 @@
 
 <script>
     $(document).ready(function(){
-        $.get("呵呵呵",function(data,status){
+        $.get("呵呵呵",function(data){
              $(".content-head").append(data.name),
              $(".detail").$("p").append(data.detail),
              $(".reward").append(data.reward),
@@ -34,20 +34,18 @@
 
 
 
-
-
     $(".button").click(function(){
-        alert("OK")
         $.post("嘻嘻嘻",{
-            name: $(".cotent-head").val(),
-            detail: $(".detail").$("p").val(),
-            reward: $(".reward"),
+            name: $(".content-head").val(),
+            detail: $(".detail").find("p").val(),
+            reward: $(".reward").val(),
             date: $(".deadline").val()
-        },function(data,status){
-            alert(data+"666"+status)
+        },function(){
+            var button = $(".button")
+            button.css("background-color","#f19ec2")
+            button.html("放弃委托")
         })
     })
-
 
 
 </script>
