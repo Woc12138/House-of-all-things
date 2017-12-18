@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,
+     user-scalable=no" />
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="text/javascript" src="../static/homeJavaScript.js"></script>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_490455_0jr5dnbpl11hsemi.css">
+    <link rel="stylesheet" type="text/css" href="../static/navBarStyle.css" />
+</head>
+<!--<frameset rows="*,7.42%">-->
+
+  <!--<frame src="">-->
+  <!--<frame src="" name="">-->
+
+<!--</frameset>-->
+<body>
+<div class="nav-bar">
+    <div class="market">
+        <a href="home.html" target="main-content"><span class="iconfont icon-shouye"></span><p>市场</p></a>
+    </div>
+
+        <span class="iconfont icon-jia" id="icon" onclick="divSW()"></span>
+        <span class="iconfont icon-circle" ></span>
+
+    <div class="mine">
+        <a href="mine.html" target="main-content"><span class="iconfont icon-user"></span><p>我的</p></a>
+    </div>
+</div>
+
+
+    <script>
+
+        var box = window.top.document.getElementById("homeframe").contentWindow.document.getElementById("hidden-show");
+        function divSW() {
+        if( box.style.display === "none") {
+            box.style.display = "block";
+    } else {
+        box.style.display = "none";
+    }
+}
+
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>
